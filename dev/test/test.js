@@ -1,5 +1,5 @@
 var assert = require("assert");
-const Blockchain = require("../dev/blockchain");
+const Blockchain = require("../blockchain");
 
 let bitcoin;
 
