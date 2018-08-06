@@ -4,11 +4,15 @@
   "description": "Blockchain with JavaScript",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon --watch dev -e js dev/api.js",
     "test": "mocha dev/test/test.js"
   },
   "author": "Michael Donal",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.3",
     "sha256": "^0.2.0"
   },
   "devDependencies": {
