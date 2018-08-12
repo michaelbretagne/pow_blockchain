@@ -1,5 +1,5 @@
-var express = require("express");
-var app = express();
+const express = require("express");
+const app = express();
 const bodyParser = require("body-parser");
 const uuid = require("uuid/v1");
 const port = process.argv[2];
@@ -56,7 +56,7 @@ app.get("/mine", (req, res) => {
 
   const previousBlockHash = lastBlock["hash"];
   const currentBlockData = {
-    transaction: bitcoin.pendingTransactions,
+    transactions: bitcoin.pendingTransactions,
     index: lastBlock["index"] + 1,
   };
 
